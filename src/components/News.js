@@ -29,11 +29,11 @@ const News = (props) => {
 
     props.setProgress(100);
   };
-
   useEffect(() => {
     document.title = `${toCapital(props.category)} - NewsWala`;
 
     updateNews();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // const handlePrevClick = async () => {
